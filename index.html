@@ -7,10 +7,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
   <style>
+    html {
+      font-size: 100%;
+    }
+    @media (max-width: 768px) {
+      html {
+        font-size: 60%;
+      }
+    }
+    @media (max-width: 480px) {
+      html {
+        font-size: 50%;
+      }
+    }
     body {
       margin: 0;
       font-family: 'Alfa Slab One', cursive;
-      background: url('bcg.jpg') no-repeat center center fixed;
+      background: url('bcg.png') no-repeat center center fixed;
       background-size: cover;
       color: #fff;
       text-align: center;
@@ -24,9 +37,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 2rem;
     }
     h1 {
-      font-size: 2.56em; /* 64px * 2.5 = 160px / 62.5 = ~2.56em */
+      font-size: 2.56em;
       margin-bottom: 40px;
       color: #f2d16b;
       text-shadow: 2px 2px #000;
@@ -39,7 +53,7 @@
     }
     .menu-button {
       padding: 20px 40px;
-      font-size: 0.96em; /* 24px * 2.5 = 60px / 62.5 = ~0.96em */
+      font-size: 0.96em;
       background-color: #8b4513;
       color: #fff;
       border: none;
@@ -56,13 +70,13 @@
       transform: scale(1.05);
     }
     .menu-button i {
-      font-size: 1.28em; /* 32px * 2.5 = 80px / 62.5 = ~1.28em */
+      font-size: 1.28em;
     }
   </style>
 </head>
 <body>
   <div class="menu-container">
-    <h1>🌵 Dziki Liptuś</h1>
+    <h1>🌵 Dziki Zachód</h1>
     <div class="menu-buttons">
       <button class="menu-button" onclick="window.location.href='gra.html'">
         <i class="fas fa-gamepad"></i> Gra
