@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wild West Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Alfa Slab One', cursive;
+      background: url('bcg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      min-height: 100vh;
+      font-size: 250%;
+    }
+    .menu-container {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 2.56em; /* 64px * 2.5 = 160px / 62.5 = ~2.56em */
+      margin-bottom: 40px;
+      color: #f2d16b;
+      text-shadow: 2px 2px #000;
+    }
+    .menu-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+    .menu-button {
+      padding: 20px 40px;
+      font-size: 0.96em; /* 24px * 2.5 = 60px / 62.5 = ~0.96em */
+      background-color: #8b4513;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      box-shadow: 3px 3px 0 #000;
+    }
+    .menu-button:hover {
+      background-color: #a0522d;
+      transform: scale(1.05);
+    }
+    .menu-button i {
+      font-size: 1.28em; /* 32px * 2.5 = 80px / 62.5 = ~1.28em */
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <h1>🌵 Dziki Liptuś</h1>
+    <div class="menu-buttons">
+      <button class="menu-button" onclick="window.location.href='gra.html'">
+        <i class="fas fa-gamepad"></i> Gra
+      </button>
+      <button class="menu-button" onclick="window.location.href='galeria.html'">
+        <i class="fas fa-image"></i> Galeria
+      </button>
+    </div>
+  </div>
+</body>
+</html>
